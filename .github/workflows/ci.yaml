@@ -14,7 +14,7 @@ jobs:
   fmt:
     runs-on: ubuntu-slim
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7.0.1
       - uses: actions-rust-lang/setup-rust-toolchain@v1
         with:
           components: rustfmt
@@ -23,7 +23,7 @@ jobs:
   tests:
     runs-on: ubuntu-slim
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7.0.1
       - uses: actions-rust-lang/setup-rust-toolchain@v1
         with:
           components: rustfmt, clippy
@@ -32,7 +32,7 @@ jobs:
   clippy:
     runs-on: ubuntu-slim
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7.0.1
       - uses: actions-rust-lang/setup-rust-toolchain@v1
         with:
           components: rustfmt, clippy
@@ -42,7 +42,7 @@ jobs:
   pedantic:
     runs-on: ubuntu-slim
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7.0.1
       - uses: actions-rust-lang/setup-rust-toolchain@v1
         with:
           components: rustfmt, clippy
